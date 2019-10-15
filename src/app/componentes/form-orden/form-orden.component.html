@@ -1,0 +1,95 @@
+<header id="main-header" class="py-2 bg-secondary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>
+                    <i class="fas fa-check-double"></i> Formulario
+                </h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- START FORMULARIO ORDENES PLANIFICACIÓN -->
+<div class="card w-75 mx-auto mt-3">
+    <div class="card-body p-5 mb-3">
+        <h5 class="card-header">Ingreso de ordenes</h5>
+        <div class="row mt-5">
+            <!-- NUMERO DE ORDEN -->
+            <div class="col-md-5">
+                <label class="form-control-label">Numero de la orden</label>
+                <input type="text" Class="form-control">
+            </div>
+            <!-- TIPO DE PEDIDO -->
+            <div class="col-md-4">
+                <label class="form-control-label">Tipo de orden</label>
+                <select name="tipo-orden" id="tipo-orden" class="form-control">
+                  <option value="0">opcion 1</option>
+                  <option value="1">opcion 2</option>
+                  <option value="2">opcion 3</option>
+                  <option value="3">opcion 4</option>
+                </select>
+            </div>
+            <!-- ESTADO -->
+            <div class="col-md-3">
+                <label class="form-control-label">Estado orden</label>
+                <select name="estado-orden" id="estado-orden" class="form-control">
+                    <option value="0">opcion 1</option>
+                    <option value="1">opcion 2</option>
+                    <option value="2">opcion 3</option>
+                    <option value="3">opcion 4</option>
+                  </select>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <!-- RUT PERSONA -->
+            <div class="col-md-6">
+                <label class="form-control-label">Cliente</label>
+                <select name="cliente" id="cliente" class="form-control">
+                    <option value="0">opcion 1</option>
+                    <option value="1">opcion 2</option>
+                    <option value="2">opcion 3</option>
+                    <option value="3">opcion 4</option>
+                  </select>
+            </div>
+            <!-- FECHA DE CREACION -->
+            <div class="col-md-6">
+                <label class="form-control-label">Fecha de creación</label>
+                <input type="date" name="" id="" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <!-- CORREO CLIENTE-->
+            <div class="col-md-6">
+                <label class="form-control-label">Correo electrónico cliente</label>
+                <input type="text" class="form-control">
+            </div>
+            <!-- VENDEDOR -->
+            <div class="col-md-3">
+                <label class="form-control-label">Vendedor</label>
+                <select name="vendedor" id="vendedor" class="form-control">
+                    <option value="0">opcion 1</option>
+                    <option value="1">opcion 2</option>
+                    <option value="2">opcion 3</option>
+                    <option value="3">opcion 4</option>
+                  </select>
+            </div>
+            <!-- SUPERVISOR -->
+            <div class="col-md-3">
+                <label class="form-control-label">Supervisor</label>
+                <select name="supervisor" id="supervisor" class="form-control">
+                    <option value="0">opcion 1</option>
+                    <option value="1">opcion 2</option>
+                    <option value="2">opcion 3</option>
+                    <option value="3">opcion 4</option>
+                  </select>
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary w-50 mt-3">Registrar orden</button>
+        </div>
+    </div>
+</div>
+<!-- END FORMULARIO ORDENES PLANIFICACION -->

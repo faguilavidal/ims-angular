@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.error-message {
+    color: #E13526;
+    position: absolute;
+    padding-top: 8px;
+    font-size: 0.9em;
+    right: 0;
+}
+
+.ng-valid:not(form)[required] {
+    background: url("assets/check.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.ng-touched:not(form)[required].ng-invalid {
+    background: url("assets/unchecked.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}

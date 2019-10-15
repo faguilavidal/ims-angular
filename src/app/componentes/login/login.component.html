@@ -1,0 +1,67 @@
+<header id="main-header" class="py-2 bg-secondary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>
+                    <i class="fas fa-user"></i> Iniciar sesión
+                </h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+</section>
+
+<flash-messages></flash-messages>
+
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Panel de autenticación</h4>
+                    </div>
+                    <div class="card-body">
+                        <form (submit)="login()" #f="ngForm">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" [(ngModel)]="email" required #emailControl="ngModel" email>
+                                <ng-container *ngIf="!emailControl.valid && emailControl.touched">
+                                    <p *ngIf="emailControl.errors.required" class="error-message">
+                                        Email es un campo requerido!!
+                                    </p>
+                                    <p *ngIf="emailControl.errors.email" class="error-message">
+                                        Email invalido!!
+                                    </p>
+                                </ng-container>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control" name="password" [(ngModel)]="password" required #passwordControl="ngModel">
+                                <ng-container *ngIf="!passwordControl.valid && passwordControl.touched">
+                                    <p *ngIf="passwordControl.errors.required" class="error-message">
+                                        Contraseña es un campo requerido!!
+                                    </p>
+                                </ng-container>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-block" [disabled]="!f.valid">
+                              <i class="fas fa-user"></i> Entrar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>{{f.status}}</p>
+
+    </div>
+</section>

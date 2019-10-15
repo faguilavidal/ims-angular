@@ -1,0 +1,88 @@
+<div class="mx-auto mt-1 p-3">
+    <div class="row">
+        <div class="col-md-2">
+            <!-- CARD PENDIENTES -->
+            <div class="card text-white bg-warning mb-3 mr-1 w-100" style="max-width: 14rem; cursor: pointer" (click)="ordenesPendientes()">
+                <div class="card-header">Ordenes:</div>
+                <div class="card-body">
+                    <h5>Pendientes</h5>
+                    <div class="row">
+                        <label for="pendientes" Class="col-md-7 card-text" style="font-size: xx-large; cursor: pointer">{{numero}}</label>
+                        <img src="assets/Pendiente.png" width="48px" height="48px">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD CONTROL DE CALIDAD -->
+            <div class="card text-white bg-primary mb-3 mr-1 w-100" style="max-width: 14rem; cursor: pointer" (click)="ordenesPendientes()">
+                <div class="card-header">Ordenes:</div>
+                <div class="card-body">
+                    <h5>Control de calidad</h5>
+                    <div class="row">
+                        <label for="controlDeCalidad" Class="col-md-7 card-text" style="font-size: xx-large; cursor: pointer">{{numero}}</label>
+                        <img src="assets/controldecalidad.png" width="48px" height="48px">
+                    </div>
+                </div>
+            </div>
+            <!-- CARD LISTAS PARA RETIRO -->
+            <div class="card text-white bg-success mb-3 mr-1 w-100" style="max-width: 14rem; cursor: pointer" (click)="ordenesPendientes()">
+                <div class="card-header">Ordenes:</div>
+                <div class="card-body">
+                    <h5>Lista para retiro</h5>
+                    <div class="row">
+                        <label for="listasParaRetiro" Class="col-md-7 card-text" style="font-size: xx-large; cursor: pointer">{{numero}}</label>
+                        <img src="assets/retiro.png" width="48px" height="48px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- GRAFICO -->
+            <div class="card p-2">
+                <h3 class="mt-2">Gráfico de ordenes <small>--Barras--</small></h3>
+                <hr>
+                <app-grafico></app-grafico>
+            </div>
+            <!-- FIN GRAFICO -->
+
+            <div class="row mt-3 ml-1">
+                <!-- CARD EN PRODUCCION -->
+                <div class="card text-white bg-info mb-3 mr-1 w-100 mr-3" style="max-width: 14rem; cursor: pointer" (click)="ordenesPendientes()">
+                    <div class="card-header">Ordenes:</div>
+                    <div class="card-body">
+                        <h5>En producción</h5>
+                        <div class="row">
+                            <label for="enProduccion" Class="col-md-7 card-text" style="font-size: xx-large; cursor: pointer">{{numero}}</label>
+                            <img src="assets/produccion.png" width="48px" height="48px">
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD EN ESPERA -->
+                <div class="card text-white bg-secondary mb-3 w-100 mr-3" style="max-width: 14rem; cursor: pointer" (click)="ordenesPendientes()">
+                    <div class="card-header">Ordenes:</div>
+                    <div class="card-body">
+                        <h5>En espera</h5>
+                        <div class="row">
+                            <label for="enEspera" Class="col-md-7 card-text" style="font-size: xx-large; cursor: pointer">{{numero}}</label>
+                            <img src="assets/enespera.png" width="48px" height="48px">
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD FINALIZADAS -->
+                <div class="card bg-light mb-3 w-100" style="max-width: 14rem; cursor: pointer" (click)="ordenesPendientes()">
+                    <div class="card-header">Ordenes:</div>
+                    <div class="card-body">
+                        <h5>Finalizadas</h5>
+                        <div class="row">
+                            <label for="finalizada" Class="col-md-7 card-text" style="font-size: xx-large; cursor: pointer">{{numero}}</label>
+                            <img src="assets/checkOK.png" width="48px" height="48px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-4 p-2">
+            <app-table-dashboard></app-table-dashboard>
+        </div>
+    </div>
+</div>
